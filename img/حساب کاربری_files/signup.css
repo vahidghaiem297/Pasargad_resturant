@@ -1,0 +1,39 @@
+body{
+    color: #fff;
+}
+.split{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    width: 50%;
+    z-index: 1;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.left{
+    left:0;
+    background-color: brown;
+    filter:grayscale(.8);
+    transition: 0.6s ease-in-out;
+   
+}
+.split.left:hover{
+    filter:grayscale(0);
+     width: 100%;
+     z-index: 2;
+}
+.right{
+    right: 0;
+    background-color: green;
+}
+.centered{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.centered img{
+    width: 150px;
+    border-radius: 50%;
+}
